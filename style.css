@@ -3,9 +3,16 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: sans-serif;
+}
+.logo{
+    font-family: 'Righteous', cursive;
+    height: 40px;
+    font-size: 1.5em; 
 }
 
 /* nav bar */
@@ -128,3 +135,102 @@ body{
     font-size: 18px;
     margin: 13px 0;
 }
+
+/* testimonials */
+#testimonials{
+    padding: 5rem 0;
+}
+.testimonial{
+    border-left: 4px solid #7b1798;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.testimonial img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+.user-detail{
+    display: inline-block;
+    font-size: 12px;
+}
+/* social */
+#social{
+    background: #f8f9fa;
+    padding: 5rem 0;
+}
+#social h3{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.social-icons img{
+    width: 60px;
+    transition: 0.5s;
+}
+.social-icons a:hover img{
+    transform: translateY(-10px);
+}
+
+/* footer */
+footer{
+    background-image: linear-gradient(to right, #af20c5, #5f1782);
+    color: #fff;
+}
+footer img{
+    -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+    width: 100%;
+}
+.footer-box{
+    padding: 20px;
+}
+.footer-box .fa{
+    margin-right: 8px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+.footer-box .btn-primary{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #a517ba, #5f1782);
+}
+ footer hr{
+     display: block;
+    background-color: #fff;
+}
+footer .copyright{
+    margin: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* small screen */
+@media (max-width: 460px) {
+    /* banner */
+    .promot-title{
+        margin-top: 50px;
+    }
+    /* services */
+    #services,#about-us,#testimonials,#social{
+        padding: 3rem 0;
+    }                                                                                                      
+}                                                                                                                                                                                                                     
